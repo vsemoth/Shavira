@@ -24,41 +24,42 @@
 
     </head>
     <body style="background-color: #eee;">
-        <div  class="top-bar" style="background-color: #c0c0c0;">
-            <div style="color:white" class="top-bar-left">
-                <h4 class="brand-title">
-                    <a href="{{url('/')}}">
-                        <i class="fa fa-home fa-lg" aria-hidden="true">
-                        </i>
-                       Shavira&rsquo;s Online Store
-                    </a>
-                </h4>
-            </div>
-            <div class="top-bar-right">
-                <ol class="menu">
-                    <li>
-                        <a href="{{route('shirts')}}">
-                            PRODUCTS
+        <nav class="navbar">
+            <div  class="top-bar" style="background-color: #c0c0c0;">
+                <div style="color:white" class="top-bar-left">
+                    <h4 class="brand-title">
+                        <a href="{{url('/')}}">
+                            <img style="height: 50px;" src="{{ url('/dist/img/IMG-20180129-WA0000.jpg') }}">
+                           Abbonzo&rsquo;s Online Store
                         </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            CONTACT
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ route('cart.index') }}">
-                            <i class="fa fa-shopping-cart fa-2x" aria-hidden="true">
-                            </i>
-                            CART
-                            <span class="alert badge">
-                                {{ Cart::count() }}
-                            </span>
-                        </a>
-                    </li>
-                </ol>
-            </div>
-        </div>
+                    </h4>
+                </div>
+                <div class="top-bar-right">
+                    <ol class="menu">
+                        <li>
+                            <a href="{{route('shirts')}}">
+                                PRODUCTS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                CONTACT
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('cart.index') }}">
+                                <i class="fa fa-shopping-cart fa-2x" aria-hidden="true">
+                                </i>
+                                CART
+                                <span class="alert badge">
+                                    {{ Cart::count() }}
+                                </span>
+                            </a>
+                        </li>
+                    </ol>
+                </div>
+            </div>            
+        </nav>
         
             @yield('content')
 
@@ -69,17 +70,33 @@
     <div class="small-12 medium-4 large-4 columns">
       <i class="fi-laptop"></i>
       <p>Coded by L.N. Rozani, copyright &copy; 09/2017. All rights reserved!</p>
+      <a href="http://lrwebs.tk/">lrwebs.tk</a>
     </div>
     <div class="small-12 medium-4 large-4 columns">
-      <i class="fi-html5"></i>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit impedit consequuntur at! Amet sed itaque nostrum, distinctio eveniet odio, id ipsam fuga quam minima cumque nobis veniam voluptates deserunt!</p>
+     <i> <img style="height: 100px;" src="{{ ('/dist/img/IMG-20180129-WA0000.jpg') }}"> </i>
+      <p>Abbonzzo is an Online Store that links up to the worlds biggest Online Brand</p>
     </div>
     
     <div class="small-6 medium-4 large-4 columns">
-      <h4 style="margin-top: 0px;">Follow Us</h4>
+        <i><h2>Talk to us</h2></i>
+      <h4 style="margin-top: 0px;">Follow Us On:</h4>
       <ul class="footer-links">
-        <li><a href="https://www.facebook.com/Shaviraart">Facebook</a></li>
-        <li><a href="https://twitter.com/webdevmatics">Twitter</a></li>
+        <li>
+            <a href="https://www.facebook.com/Abbonzzo-847834992035277/">
+                <span class="alert badge">
+                    <img style="border-radius: 50%; padding: 0; height: 30px; background-color: transparent;" src="{{ url('/dist/img/download.png') }}">
+                </span>
+                Facebook
+            </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/Abbonzzo-847834992035277/">
+                <span class="alert badge">
+                    <img style="border-radius: 50%; padding: 0; height: 30px; background-color: transparent;" src="{{ url('/dist/img/images.png') }}">
+                </span>
+                Twitter
+            </a>
+        </li>
       <ul>
     </div>
   </div>

@@ -1,6 +1,6 @@
 @extends('layout.main')
 
-@section('title','| Shavira&rsquo;s Online Store')
+@section('title','| Abbonzzo&rsquo;s Online Store')
 
 @section('content')
 
@@ -11,16 +11,16 @@
             <br/>
             <h2 >
                 <strong style="text-shadow: 1px 1px 3px #000;">
-                    Hey! Welcome to Shavira&rsquo;s Online Store
+                    Hey! Welcome to Abbonzzo&rsquo;s Online Store
                 </strong>
             </h2>
             <br>
-            <a href="{{url('/shirts')}}"><button style='margin-top:70px;' class="button large">Check Out My Products</button></a>
+            <a href="{{url('/shirts')}}"><button style='margin-top:70px;' class="button large">Check Out Our Products</button></a>
     </section>
         <br/>
         <div class="subheader text-center">
              <h2>
-            Shavira&rsquo;s Latest Products
+            Abbonzzo&rsquo;s Latest Products
         </h2>
         </div>
        
